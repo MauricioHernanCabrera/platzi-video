@@ -6,5 +6,11 @@ import Media from './src/playlist/components/media'
 
 const app = document.getElementById('app')
 
-render(<Media/>, app)
+render(
+  <Media 
+    title="¿Qué es responsive Design?" 
+    author="Leonidas Esteban" 
+    images="./images/covers/bitcoin.jpg"
+  />, app
+)
 
