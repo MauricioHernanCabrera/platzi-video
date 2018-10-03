@@ -11,7 +11,7 @@ render(
     type="video"
     title="¿Qué es responsive Design?" 
     author="Leonidas Esteban" 
-    images="./images/covers/bitcoin.jpg"
+    image="./images/covers/bitcoin.jpg"
   />, app
 )
 
