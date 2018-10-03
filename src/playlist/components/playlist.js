@@ -1,23 +1,20 @@
 import React from 'react'
 import Media from './media'
 import './playlist.css'
+import Play from './../../icons/components/play'
+import Pause from './../../icons/components/pause'
+import FullScreen from './../../icons/components/full-screen'
+import Volume from './../../icons/components/volume'
 
-
-// function Playlist (props) {
-//   return (
-//     // <div onClick={props.handleClick}>
-//     <div>
-//       {props}
-//     </div>
-//   )
-// }
 
 function Playlist (props) {
-  console.log(props.data)
   const playlist = props.data.categories[0].playlist
   return (
     <div className="Playlist">
-      Esta es una playlist funcional
+      <Play size={100} color="red"/>
+      <Volume size={50} color="blue"/>
+      <Pause size={70} color="orange"/>
+      <FullScreen size={200} color="green"/>
       {
         playlist.map((item) => {
           return <Media {...item} key={item.id}/>
