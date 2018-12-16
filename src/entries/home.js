@@ -2,12 +2,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import Playlist from './src/playlist/components/playlist'
-import data from './src/api.json'
+import Home from '../pages/containers/home'
 
 const app = document.getElementById('app')
 
-render(
-  <Playlist data={data}/>, app
-)
+render(<Home/>, app)
 

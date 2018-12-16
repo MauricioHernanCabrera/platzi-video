@@ -15,19 +15,21 @@ module.exports = (env) => {
   }
 
   return {
-
     entry: {
-      "platzi-video": path.resolve(__dirname, 'index.js'),
+      "home": path.resolve(__dirname, 'src/entries/home.js'),
     },
+
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'js/[name].[hash].js',
       publicPath: path.resolve(__dirname, 'dist')+"/",
       chunkFilename: 'js/[id].[chunkhash].js',
     },
+
     devServer: {
       port: 9000,
     },
+
     module: {
       rules: [
         {
@@ -68,6 +70,7 @@ module.exports = (env) => {
         },
       ]
     },
+    
     plugins
   }
 }
