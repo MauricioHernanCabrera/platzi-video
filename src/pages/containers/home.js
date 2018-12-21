@@ -29,8 +29,9 @@ class Home extends Component {
     return (
       <HandleError>
         <HomeLayout>
-          <VideoPlayer></VideoPlayer>
           <Related/>
+          
+          <VideoPlayer></VideoPlayer>
           
           <Categories 
             categories={this.props.data.categories}
